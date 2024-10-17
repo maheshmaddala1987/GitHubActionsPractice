@@ -47,10 +47,3 @@ jobs:
     # Step 5: Run Selenium tests
     - name: Run Selenium Tests
       run: mvn test
-
-    # Step 6: Archive test results (JUnit XML reports)
-    - name: Archive test results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: target/surefire-reports/dependency graph
